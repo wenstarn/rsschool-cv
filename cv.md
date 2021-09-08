@@ -36,7 +36,11 @@ function duplicateEncode(word){
 }
 ```
 # Work experience
-fdf
 # Education
-
+- **University:** Higher School of Economics, Informatics and Computer Engineering(third-year student)
+- **Courses**
+    - The Web Developer Bootcamp 2021
+    - FreeCodeCamp
 # English level
+**B1**(I had classes with a native speaker)
+
