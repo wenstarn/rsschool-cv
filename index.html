@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Junior Front-End developer</h1>
+        </header>
+        <div>
+            <aside>
+                <section>
+                    <img src="https://kawai.shikimori.one/system/characters/original/151306.jpg?1619038728" alt="">
+                    <h2>Aleksandr Golomazov</h2>
+                </section>
+                <section>
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>C++(QT)</li>
+                        <li>Python(pandas, numpy, matplotlib, tensorflow, tkinter)</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Contacts</h2>
+                    <ul>
+                        <li><b>Email:</b> golomazov.aleksandr@gmail.com</li>
+                        <li><b>Phone:</b> +79771422698</li>
+                        <li><b>Telegram:</b> @Wenstan</li>
+                    </ul>
+                </section>
+            </aside>
+            <main>
+                <section>
+                    <h2>Summary</h2>
+                    <p>
+                        The development of my personality is the main goal. And becoming a good Frontend specialist is a
+                        slight part of that.
+                        I want to obtain knowledge everyday and that's why I've enrolled for this course. Hopefully,
+                        thanks to my persistance
+                        in study I could acquire new skills in RS school!
+                    </p>
+                </section>
+                <section>
+                    <h2>Education</h2>
+                    <ul>
+                        <li><b>Education:</b> Higher School of Economics, Informatics and Computer
+                            Engineering(third-year student)</li>
+                        <li>
+                            <b>Courses:</b>
+                            <ul>
+                                <li>The Web Developer Bootcamp 2021</li>
+                                <li>FreeCodeCamp</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Code Example</h2>
+                    <pre>
+                        <code>     
+                        function duplicateEncode(word){
+                            let newString = []
+                            for(let i = 0; i &lt; word.length; i++) {
+                              newString.push(0)
+                            }
+                            word = word.toLowerCase();
+                            let length = word.length;
+                            for(let i = 0; i &lt; length; i++) {
+                              if (newString[i] === 0) {
+                                curr = word.indexOf(word[i]);
+                                last = word.lastIndexOf(word[i]);  
+                                if (curr != last) {
+                                  for (let j = curr; j &lt; length; j++) {
+                                    if(word[i] == word[j])  newString[j] = ')' 
+                                  }
+                                }
+                                else newString[i] = '('
+                              }
+                            }  
+                          return newString.join('')
+                        }    
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    <h2>English level</h2>
+                    <p>
+                        Intermediate (B1)
+                    </p>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
