@@ -5,101 +5,339 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="highlight/styles/default.min.css">
+    <script src="highlight/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <title>Document</title>
 </head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                    fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+                    <path
+                        d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z" />
+                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                </svg> My CV</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#summ">Summary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#edu">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#code">Code Examples</a>
+                    </li>
 
-<body>
-    <div>
-        <header>
-            <h1>Junior Front-End developer</h1>
-        </header>
-        <div>
-            <aside>
-                <section>
-                    <img src="https://kawai.shikimori.one/system/characters/original/151306.jpg?1619038728" alt="">
-                    <h2>Aleksandr Golomazov</h2>
-                </section>
-                <section>
-                    <h2>Skills</h2>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="summ" class="container-fluid col-lg-8 offset-lg-2 col-md-10 offset-md-1 mt-5 d-flex flex-column">
+        <main class="container-fluid container-lg mb-5" style="min-height: 50vh;">
+            <div class="card bg-light rounded-top">
+                <div class="row g-0" style="background-color: white;">
+                    <div class="px-4 py-5 col-lg-4 col-md-5 ">
+                        <img src="https://kawai.shikimori.one/system/characters/original/151306.jpg?1619038728"
+                            class="img-fluid rounded-start" alt="..." style="min-height: 100%; min-width: 100%;">
+                    </div>
+                    <div class="col-lg-8 col-md-7 ">
+                        <div class="card-body d-flex flex-column justify-content-lg-center justify-content-md-center"
+                            style="min-height: 100%;">
+                            <div>
+                                <h5 class="greating card-title fs-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                        class="bi bi-chat-right" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z" />
+                                    </svg>
+                                    <span>Hello</span>
+                                </h5>
+                                <h5 class="fs-1 greating">
+                                    I'm Aleksandr Golomazov
+                                </h5>
+                                <p class="fs-3 greating">Junior Front-End developer</p>
+                            </div>
+                            <hr>
+                            <div class="container-fluid">
+                                <ul style="min-height: 100%; padding: 0%;">
+                                    <li class="">
+                                        <strong>Age</strong>
+                                        <span class="textContact">20</span>
+                                    </li>
+                                    <li class="">
+                                        <strong>Email</strong>
+                                        <span class="textContact">golomazov.aleksandr@gmail.com</span>
+                                    </li>
+                                    <li class="">
+                                        <strong>English level</strong>
+                                        <span class="textContact">Intermediate</span>
+                                    </li>
+                                    <li class="">
+                                        <strong>Phone</strong>
+                                        <span class="textContact">+79771422698</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <section class="mb-5">
+            <h2>About me</h2>
+            <p>
+                The development of my personality is the main goal. And becoming a good Frontend specialist
+                is a
+                slight part of that.
+                I want to obtain knowledge everyday and that's why I've enrolled for this course. Hopefully,
+                thanks to my persistance
+                in study I could acquire new skills in RS school!
+            </p>
+        </section>
+        <h2 id="skills">Professional Skills</h2>
+        <section class="p-3 mb-5 shadow-sm " style="background-color: white;">
+            <div class="row">
+                <div class="col-6">
                     <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
-                        <li>C++(QT)</li>
-                        <li>Python(pandas, numpy, matplotlib, tensorflow, tkinter)</li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>Contacts</h2>
-                    <ul>
-                        <li><b>Email:</b> golomazov.aleksandr@gmail.com</li>
-                        <li><b>Phone:</b> +79771422698</li>
-                        <li><b>Telegram:</b> @Wenstan</li>
-                    </ul>
-                </section>
-            </aside>
-            <main>
-                <section>
-                    <h2>Summary</h2>
-                    <p>
-                        The development of my personality is the main goal. And becoming a good Frontend specialist is a
-                        slight part of that.
-                        I want to obtain knowledge everyday and that's why I've enrolled for this course. Hopefully,
-                        thanks to my persistance
-                        in study I could acquire new skills in RS school!
-                    </p>
-                </section>
-                <section>
-                    <h2>Education</h2>
-                    <ul>
-                        <li><b>Education:</b> Higher School of Economics, Informatics and Computer
-                            Engineering(third-year student)</li>
                         <li>
-                            <b>Courses:</b>
-                            <ul>
-                                <li>The Web Developer Bootcamp 2021</li>
-                                <li>FreeCodeCamp</li>
-                            </ul>
+                            HTML
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">25%</div>
+                            </div>
+
+                        </li>
+                        <li>CSS
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">25%</div>
+                            </div>
+                        </li>
+                        <li>JS
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">25%</div>
+                            </div>
                         </li>
                     </ul>
-                </section>
-                <section>
-                    <h2>Code Example</h2>
-                    <pre>
-                        <code>     
-                        function duplicateEncode(word){
-                            let newString = []
-                            for(let i = 0; i &lt; word.length; i++) {
-                              newString.push(0)
-                            }
-                            word = word.toLowerCase();
-                            let length = word.length;
-                            for(let i = 0; i &lt; length; i++) {
-                              if (newString[i] === 0) {
-                                curr = word.indexOf(word[i]);
-                                last = word.lastIndexOf(word[i]);  
-                                if (curr != last) {
-                                  for (let j = curr; j &lt; length; j++) {
-                                    if(word[i] == word[j])  newString[j] = ')' 
-                                  }
-                                }
-                                else newString[i] = '('
-                              }
-                            }  
-                          return newString.join('')
-                        }    
-                        </code>
-                    </pre>
-                </section>
-                <section>
-                    <h2>English level</h2>
-                    <p>
-                        Intermediate (B1)
-                    </p>
-                </section>
-            </main>
-        </div>
+                </div>
+                <div class="col-6">
+                    <ul>
+                        <li>C++
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">25%</div>
+                            </div>
+                        </li>
+                        <li>Python
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">25%</div>
+                            </div>
+                        </li>
+
+                        <li>PostgreSQL
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">25%</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-5">
+            <h2>Recent projects</h2>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://klike.net/uploads/posts/2019-05/1558767846_30.jpg" class="d-block w-100"
+                            alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://klike.net/uploads/posts/2019-05/1558767809_1.jpg" class="d-block w-100"
+                            alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://klike.net/uploads/posts/2019-05/medium/1558767756_2.jpg" class="d-block w-100"
+                            alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <main>
+            <h2 id="edu">Education</h2>
+            <section class="container mb-5">
+                <div class="row d-flex flex-row justify-content-between">
+                    <div class="col-sm-5">
+                        <h3>Higher Education</h3>
+                        <div class="shadow-sm p-3 edCard">
+                            <p style="color: #0074d9;">2019 - 2023</p>
+                            <p>
+                                <b>Bachelor degree:</b> Informatics and Computer
+                                Engineering
+                            </p>
+                            <p style="color: #808080;">Higher School of Economics</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 d-flex flex-row justify-content-center align-items-center d-none d-sm-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor"
+                            class="bi bi-book" viewBox="0 0 16 16">
+                            <path
+                                d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                        </svg>
+                    </div>
+                    <div class="col-sm-5">
+                        <h3>Courses</h3>
+                        <div class="shadow-lg p-3 edCard" style="background-color: white;">
+                            <ul>
+                                <li>
+                                    <p>
+                                        The Web Developer Bootcamp 2021 <span style="color: #808080;">Udemy</span>
+                                    </p>
+
+                                </li>
+
+                                <li>
+                                    <p>Practical course for beginners in SQL and PostgreSQL 2020 <span
+                                            style="color: #808080;">Udemy</span></p>
+                                </li>
+                                <li>FreeCodeCamp</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <h2 class=" text-center">Code Example</h2>
+            <section id="code" class="container d-flex flex-row justify-content-center">
+                <pre id="codeSheet" class="shadow-lg d-flex flex-column justify-content-between"style="width:60%; background-color: #0074d9;">
+                    <code style="padding:0%;background-color: white;">
+    function duplicateEncode(word){
+        let newString = []
+        for(let i = 0; i &lt; word.length; i++) {
+            newString.push(0)
+        }
+        word = word.toLowerCase();
+        let length = word.length;
+        for(let i = 0; i &lt; length; i++) {
+            if (newString[i] === 0) {
+            curr = word.indexOf(word[i]);
+            last = word.lastIndexOf(word[i]);  
+            if (curr != last) {
+                for (let j = curr; j &lt; length; j++) {
+                if(word[i] == word[j])  newString[j] = ')' 
+                }
+            }
+            else newString[i] = '('
+            }
+        }  
+        return newString.join('')
+    }               
+                </code>       
+            </pre>
+            </section>
+            <h2>Contact me</h2>
+            <section style="background-color: white;">
+                <ul>
+                    <li>Skype</li>
+                    <li>Discord</li>
+                    <li>Phone</li>
+                    <li>Telegram</li>
+                </ul>
+            </section>
+        </main>
     </div>
+
+    <footer class="footer navbar-dark  bg-primary py-3 mt-5">
+        <div class="container text-center">
+            <span class="text-center" style="color:white">YelpCamp 2021</span>
+        </div>
+    </footer>
 </body>
 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+    crossorigin="anonymous"></script>
+
+<script>
+
+    navbarNav = document.querySelector(".navbar-nav")
+    navItems = document.querySelectorAll(".nav-item")
+
+    for (navItem of navItems) {
+        navItem.addEventListener('click', function (event) {
+            event.stopPropagation();
+        })
+    }
+
+    window.topCoor = pageYOffset;
+    window.topCoor_2 = pageYOffset;
+    navbar = document.querySelector(".navbar");
+    navButton = document.querySelector(".navbar-toggler");
+
+    window.addEventListener('scroll', function (event) {
+        if (pageYOffset < topCoor) {
+            navbar.style.opacity = 1
+            topCoor = pageYOffset;
+        }
+        else {
+            navbar.style.opacity = 0
+            //navbar.classList.remove("sticky-top");
+            topCoor = pageYOffset;
+        }
+
+    });
+
+</script>
 </html>
